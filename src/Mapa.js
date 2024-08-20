@@ -13,10 +13,10 @@ function Mapa(){
     const [data, setData] = useState([]);
   
     useEffect(() => {
-      axios.get('http://192.168.1.6:5000').then(res => setData(res.data))
+      axios.get('https://dados.mobilidade.rio/gps/brt').then(res => setData(res.data.veiculos.filter(x => parseInt(x.linha) != 0 && x.ignicao != 0 && x.velocidade != 0)))
       setInterval(() => {
         console.log("chamou")
-        axios.get('http://192.168.1.6:5000').then(res => setData(res.data))
+        axios.get('https://dados.mobilidade.rio/gps/brt').then(res => setData(res.data.veiculos.filter(x => parseInt(x.linha) != 0 && x.ignicao != 0 && x.velocidade != 0)))
       }, 20000);  
     }, []);
 
