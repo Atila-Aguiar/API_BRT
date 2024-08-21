@@ -13,10 +13,10 @@ function Mapa(){
     const [data, setData] = useState([]);
   
     useEffect(() => {
-      axios.get('https://proxy-api-ppgb0awbq-atila-aguiars-projects.vercel.app/', ).then(res => setData(res.data.veiculos.filter(x => parseInt(x.linha) != 0 && x.ignicao != 0 && x.velocidade != 0)))
+      axios.get('https://proxy-api-brt.vercel.app/', ).then(res => setData(res.data))
       setInterval(() => {
         console.log("chamou")
-        axios.get('https://proxy-api-ppgb0awbq-atila-aguiars-projects.vercel.app/').then(res => setData(res.data.veiculos.filter(x => parseInt(x.linha) != 0 && x.ignicao != 0 && x.velocidade != 0)))
+        axios.get('https://proxy-api-brt.vercel.app/').then(res => setData(res.data))
       }, 20000);  
     }, []);
 
