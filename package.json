@@ -17,6 +17,7 @@
     "web-vitals": "^2.1.4"
   },
   "homepage": "https://Atila-Aguiar.github.io/API_BRT/",
+  "proxy": "https://dados.mobilidade.rio/gps/brt",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
