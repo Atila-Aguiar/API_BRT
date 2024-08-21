@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/API_BRT/static/js/main.7e457eac.js",
+    "main.js": "/API_BRT/static/js/main.2ce65893.js",
     "static/media/transbrasil.png": "/API_BRT/static/media/transbrasil.9b338050df15db4c0fb0.png",
     "index.html": "/API_BRT/index.html",
-    "main.7e457eac.js.map": "/API_BRT/static/js/main.7e457eac.js.map"
+    "main.2ce65893.js.map": "/API_BRT/static/js/main.2ce65893.js.map"
   },
   "entrypoints": [
-    "static/js/main.7e457eac.js"
+    "static/js/main.2ce65893.js"
   ]
 }
